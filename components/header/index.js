@@ -59,12 +59,12 @@ function Header({ lang }) {
   const address = accountData?.address ?? null;
 
   return (
-    <div className="sticky top-0 z-50 rounded-[10px] bg-[#f3f3f3] p-5 -m-5">
+    <div className="sticky top-0 z-50 rounded-[10px] dark:bg-[#181818] bg-[#f3f3f3] p-5 -m-5">
       <header className="flex items-end gap-2 w-full sticky top-4 shadow rounded-[10px] z-50">
-        <div className="flex flex-col bg-white rounded-[10px] flex-1">
+        <div className="flex flex-col dark:bg-black bg-[#B3B3B3] rounded-[10px] flex-1">
           <div className="rounded-t-[10px] shadow-sm">
-            <label className="flex sm:items-center flex-col sm:flex-row focus-within:ring-2 ring-[#2F80ED] rounded-t-[10px]">
-              <span className="font-bold text-sm whitespace-nowrap px-3 pt-4 sm:pt-0">{t("search-networks")}</span>
+            <label className="flex sm:items-center flex-col sm:flex-row focus-within:ring-2 dark:ring-[#093269] ring-[#2F80ED] rounded-t-[10px]">
+              <span className="font-bold text-sm [#B3B3B3]space-nowrap px-3 pt-4 sm:pt-0">{t("search-networks")}</span>
               <input
                 placeholder="ETH, Fantom, ..."
                 value={searchTerm}

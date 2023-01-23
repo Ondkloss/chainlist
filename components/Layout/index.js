@@ -23,7 +23,7 @@ export default function Layout({ children, lang }) {
 
           <div className="flex flex-col gap-4 w-full">
             <a
-              className="flex items-center justify-center mx-auto lg:ml-0 gap-2 rounded-[50px] max-w-[16.25rem] font-medium py-[18px] px-6 shadow-lg w-full bg-[#2F80ED] text-white"
+              className="flex items-center justify-center mx-auto lg:ml-0 gap-2 rounded-[50px] max-w-[16.25rem] font-medium py-[18px] px-6 shadow-lg w-full dark:bg-[#093269] bg-[#2F80ED] dark:text-black text-[#B3B3B3]"
               href="https://github.com/ethereum-lists/chains"
               target="_blank"
               rel="noopener noreferrer"
@@ -42,7 +42,7 @@ export default function Layout({ children, lang }) {
             </a>
 
             <a
-              className="flex items-center justify-center mx-auto lg:ml-0 gap-2 rounded-[50px] max-w-[16.25rem] font-medium py-[17px] px-6 w-full bg-white text-[#2F80ED] border border-[#EAEAEA]"
+              className="flex items-center justify-center mx-auto lg:ml-0 gap-2 rounded-[50px] max-w-[16.25rem] font-medium py-[17px] px-6 w-full dark:bg-black bg-[#B3B3B3] dark:text-[#093269] text-[#2F80ED] border dark:border-[#171717] border-[#EAEAEA]"
               href="https://github.com/DefiLlama/chainlist/blob/main/constants/extraRpcs.js"
               target="_blank"
               rel="noopener noreferrer"
@@ -77,7 +77,7 @@ export default function Layout({ children, lang }) {
           </a>
         </div>
       </div>
-      <div className="bg-[#f3f3f3] p-5 relative flex flex-col gap-5">
+      <div className="dark:bg-[#181818] bg-[#f3f3f3] p-5 relative flex flex-col gap-5">
         <Header lang={lang} />
 
         {children}

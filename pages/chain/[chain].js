@@ -76,7 +76,7 @@ function Chain({ chain }) {
       </Head>
 
       <Layout lang="en">
-        <div className="shadow bg-white p-8 rounded-[10px] flex flex-col gap-3 overflow-hidden">
+        <div className="shadow dark:bg-black bg-[#B3B3B3] p-8 rounded-[10px] flex flex-col gap-3 overflow-hidden">
           <Link href={`/chain/${chain.chainId}`} prefetch={false} className="flex items-center mx-auto gap-2">
             <img
               src={icon}
