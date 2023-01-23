@@ -61,15 +61,15 @@ function Header({ lang }) {
   return (
     <div className="sticky top-0 z-50 rounded-[10px] dark:bg-[#181818] bg-[#f3f3f3] p-5 -m-5">
       <header className="flex items-end gap-2 w-full sticky top-4 shadow rounded-[10px] z-50">
-        <div className="flex flex-col dark:bg-black bg-[#B3B3B3] rounded-[10px] flex-1">
+        <div className="flex flex-col dark:bg-[#0D0D0D] bg-[#B3B3B3] rounded-[10px] flex-1">
           <div className="rounded-t-[10px] shadow-sm">
-            <label className="flex sm:items-center flex-col sm:flex-row focus-within:ring-2 dark:ring-[#093269] ring-[#2F80ED] rounded-t-[10px]">
+            <label className="flex sm:items-center flex-col sm:flex-row focus-within:ring-2 dark:ring-[#2F80ED] ring-[#2F80ED] rounded-t-[10px]">
               <span className="font-bold text-sm dark:text-[#B3B3B3] text-black space-nowrap px-3 pt-4 sm:pt-0">{t("search-networks")}</span>
               <input
                 placeholder="ETH, Fantom, ..."
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
-                className="dark:bg-black bg-white dark:text-[#B3B3B3] text-black flex-1 px-3 sm:px-2 pb-4 pt-2 sm:py-4 outline-none"
+                className="dark:bg-[#0D0D0D] bg-white dark:text-[#B3B3B3] text-black flex-1 px-3 sm:px-2 pb-4 pt-2 sm:py-4 outline-none"
               />
               <svg
                 xmlns="http://www.w3.org/2000/svg"

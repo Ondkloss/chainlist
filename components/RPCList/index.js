@@ -82,7 +82,7 @@ export default function RPCList({ chain, lang }) {
   const isEthMainnet = chain?.name === "Ethereum Mainnet";
 
   return (
-    <div className="shadow dark:bg-black bg-[#B3B3B3] p-8 rounded-[10px] flex flex-col gap-3 overflow-hidden col-span-full relative overflow-x-auto">
+    <div className="shadow dark:bg-[#0D0D0D] bg-[#B3B3B3] p-8 rounded-[10px] flex flex-col gap-3 overflow-hidden col-span-full relative overflow-x-auto">
       {isEthMainnet && (
         <p className="text-center">
           Follow{" "}
@@ -139,7 +139,7 @@ export default function RPCList({ chain, lang }) {
             let className = 'bg-inherit';
 
             if (hasLlamaNodesRpc && index === 0) {
-              className = 'dark:bg-[#191919] bg-[#F9F9F9]';
+              className = 'dark:bg-[#0D0D0D] bg-[#F9F9F9]';
             }
 
             return (

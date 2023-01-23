@@ -12,7 +12,7 @@ export default function Layout({ children, lang }) {
 
   return (
     <div className="grid grid-cols-1 lg:grid-cols-[40vw,_auto]">
-      <div className="dark:text-[#B3B3B3] text-black dark:bg-black bg-white relative h-full">
+      <div className="dark:text-[#B3B3B3] text-black dark:bg-[#0D0D0D] bg-white relative h-full">
         <div className="p-5 sticky top-0 bottom-0 m-auto flex flex-col items-center gap-8 justify-center h-screen max-w-[480px] mx-auto">
           <figure className="lg:mr-auto">
             <Logo />
@@ -23,7 +23,7 @@ export default function Layout({ children, lang }) {
 
           <div className="flex flex-col gap-4 w-full">
             <a
-              className="flex items-center justify-center mx-auto lg:ml-0 gap-2 rounded-[50px] max-w-[16.25rem] font-medium py-[18px] px-6 shadow-lg w-full dark:bg-[#093269] bg-[#2F80ED] dark:text-black text-[#B3B3B3]"
+              className="flex items-center justify-center mx-auto lg:ml-0 gap-2 rounded-[50px] max-w-[16.25rem] font-medium py-[18px] px-6 shadow-lg w-full dark:bg-[#2F80ED] bg-[#2F80ED] dark:text-black text-[#B3B3B3]"
               href="https://github.com/ethereum-lists/chains"
               target="_blank"
               rel="noopener noreferrer"
@@ -42,7 +42,7 @@ export default function Layout({ children, lang }) {
             </a>
 
             <a
-              className="flex items-center justify-center mx-auto lg:ml-0 gap-2 rounded-[50px] max-w-[16.25rem] font-medium py-[17px] px-6 w-full dark:bg-black bg-[#B3B3B3] dark:text-[#093269] text-[#2F80ED] border dark:border-[#171717] border-[#EAEAEA]"
+              className="flex items-center justify-center mx-auto lg:ml-0 gap-2 rounded-[50px] max-w-[16.25rem] font-medium py-[17px] px-6 w-full dark:bg-[#0D0D0D] bg-[#B3B3B3] dark:text-[#2F80ED] text-[#2F80ED] border dark:border-[#171717] border-[#EAEAEA]"
               href="https://github.com/DefiLlama/chainlist/blob/main/constants/extraRpcs.js"
               target="_blank"
               rel="noopener noreferrer"
