@@ -98,7 +98,7 @@ export default function RPCList({ chain, lang }) {
         </p>
       )}
 
-      <table className="m-0 border-collapse [#B3B3B3]space-nowrap">
+      <table className="m-0 border-collapse [#B3B3B3]space-nowrap dark:text-[#B3B3B3] text-black">
         <caption className="relative w-full px-3 py-1 text-base font-medium border border-b-0">
           <span className="mr-4">{`${chain.name} RPC URL List`}</span>
           <button

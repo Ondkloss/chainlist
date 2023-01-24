@@ -63,7 +63,7 @@ export default function Chain({ chain, buttonOnly, lang }) {
             className="rounded-full flex-shrink-0 flex relative"
             alt={chain.name + " logo"}
           />
-          <span className="text-xl font-semibold [#B3B3B3]space-nowrap overflow-hidden text-ellipsis relative top-[1px]">
+          <span className="text-xl font-semibold [#B3B3B3]space-nowrap overflow-hidden text-ellipsis relative top-[1px] dark:text-[#B3B3B3]">
             {chain.name}
           </span>
         </Link>
@@ -71,14 +71,14 @@ export default function Chain({ chain, buttonOnly, lang }) {
         <table>
           <thead>
             <tr>
-              <th className="font-normal text-gray-500">ChainID</th>
-              <th className="font-normal text-gray-500">{t("currency")}</th>
+              <th className="font-normal text-gray-500 dark:text-[#B3B3B3]">ChainID</th>
+              <th className="font-normal text-gray-500 dark:text-[#B3B3B3]">{t("currency")}</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td className="text-center font-bold px-4">{chain.chainId}</td>
-              <td className="text-center font-bold px-4">
+              <td className="text-center font-bold px-4 dark:text-[#B3B3B3]">{chain.chainId}</td>
+              <td className="text-center font-bold px-4 dark:text-[#B3B3B3]">
                 {chain.nativeCurrency ? chain.nativeCurrency.symbol : "none"}
               </td>
             </tr>
