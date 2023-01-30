@@ -35,7 +35,7 @@ export default function Layout({ children, lang }) {
 
           <div className="flex flex-col gap-4 w-full">
             <a
-              className="flex items-center justify-center mx-auto lg:ml-0 gap-2 rounded-[50px] max-w-[16.25rem] font-medium py-[18px] px-6 shadow-lg w-full dark:bg-[#2F80ED] bg-[#2F80ED] dark:text-black text-[#B3B3B3]"
+              className="flex items-center justify-center mx-auto lg:ml-0 gap-2 rounded-[50px] max-w-[16.25rem] font-medium py-[18px] px-6 shadow-lg w-full dark:bg-[#2F80ED] bg-[#2F80ED] dark:text-black text-white"
               href="https://github.com/ethereum-lists/chains"
               target="_blank"
               rel="noopener noreferrer"
@@ -54,7 +54,7 @@ export default function Layout({ children, lang }) {
             </a>
 
             <a
-              className="flex items-center justify-center mx-auto lg:ml-0 gap-2 rounded-[50px] max-w-[16.25rem] font-medium py-[17px] px-6 w-full dark:bg-[#0D0D0D] bg-[#B3B3B3] dark:text-[#2F80ED] text-[#2F80ED] border dark:border-[#171717] border-[#EAEAEA]"
+              className="flex items-center justify-center mx-auto lg:ml-0 gap-2 rounded-[50px] max-w-[16.25rem] font-medium py-[17px] px-6 w-full dark:bg-[#0D0D0D] bg-white dark:text-[#2F80ED] text-[#2F80ED] border dark:border-[#171717] border-[#EAEAEA]"
               href="https://github.com/DefiLlama/chainlist/blob/main/constants/extraRpcs.js"
               target="_blank"
               rel="noopener noreferrer"

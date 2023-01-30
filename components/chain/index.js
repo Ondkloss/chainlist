@@ -44,7 +44,7 @@ export default function Chain({ chain, buttonOnly, lang }) {
   if (buttonOnly) {
     return (
       <button
-        className="border dark:border-[#171717] border-[#EAEAEA] px-4 py-2 rounded-[50px] dark:text-[#2F80ED] text-[#2F80ED] dark:hover:text-black hover:text-[#B3B3B3] dark:hover:bg-[#2F80ED] hover:bg-[#2F80ED] w-fit mx-auto"
+        className="border dark:border-[#171717] border-[#EAEAEA] px-4 py-2 rounded-[50px] dark:text-[#2F80ED] text-[#2F80ED] dark:hover:text-black hover:text-white dark:hover:bg-[#2F80ED] hover:bg-[#2F80ED] w-fit mx-auto"
         onClick={() => addToNetwork({ address, chain })}
       >
         {t(renderProviderText(address))}
@@ -54,7 +54,7 @@ export default function Chain({ chain, buttonOnly, lang }) {
 
   return (
     <>
-      <div className="shadow dark:bg-[#0D0D0D] bg-[#B3B3B3] p-8 pb-0 rounded-[10px] flex flex-col gap-3 overflow-hidden" key={chain.chainId}>
+      <div className="shadow dark:bg-[#0D0D0D] bg-white p-8 pb-0 rounded-[10px] flex flex-col gap-3 overflow-hidden" key={chain.chainId}>
         <Link href={`/chain/${chain.chainId}`} prefetch={false} className="flex items-center mx-auto gap-2">
           <img
             src={icon}
@@ -63,7 +63,7 @@ export default function Chain({ chain, buttonOnly, lang }) {
             className="rounded-full flex-shrink-0 flex relative"
             alt={chain.name + " logo"}
           />
-          <span className="text-xl font-semibold [#B3B3B3]space-nowrap overflow-hidden text-ellipsis relative top-[1px] dark:text-[#B3B3B3]">
+          <span className="text-xl font-semibold space-nowrap overflow-hidden text-ellipsis relative top-[1px] dark:text-[#B3B3B3]">
             {chain.name}
           </span>
         </Link>
@@ -86,7 +86,7 @@ export default function Chain({ chain, buttonOnly, lang }) {
         </table>
 
         <button
-          className="border dark:border-[#171717] border-[#EAEAEA] px-4 py-2 rounded-[50px] mb-auto dark:text-[#2F80ED] text-[#2F80ED] dark:hover:text-black hover:text-[#B3B3B3] dark:hover:bg-[#2F80ED] hover:bg-[#2F80ED] w-fit mx-auto"
+          className="border dark:border-[#171717] border-[#EAEAEA] px-4 py-2 rounded-[50px] mb-auto dark:text-[#2F80ED] text-[#2F80ED] dark:hover:text-black hover:text-white dark:hover:bg-[#2F80ED] hover:bg-[#2F80ED] w-fit mx-auto"
           onClick={() => addToNetwork({ address, chain })}
         >
           {t(renderProviderText(address))}
