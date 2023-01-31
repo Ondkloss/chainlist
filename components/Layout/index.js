@@ -16,11 +16,8 @@ const toggleTheme = (e) => {
 }
 
 const initTheme = () => {
-  const theme = localStorage.getItem('theme');
-
-  if(theme === 'dark') {
-    const element = document.body;
-    element.classList.add("dark");
+  const element = document.body;
+  if(element.classList.contains('dark')) {
     document.getElementById("theme-toggle-light-icon").classList.remove("hidden");
   }
   else {
